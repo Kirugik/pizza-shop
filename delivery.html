@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/delivery.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Delivery</title>
+</head>
+<body>
+    <section class="py-2 bg-success text-light">
+        <div class="container">
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Your Delivery Request</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod alias recusandae, aut asperiores similique at necessitatibus quas quia sequi debitis.</p>
+
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row 1-->
+                        <div class="row">
+                            <!--Grid column 1-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">First name</label>
+                                </div>
+                            </div>
+                            <!--Grid column 1 end-->
+
+                            <!--Grid column 2-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Last name</label>
+                                </div>
+                            </div>
+                            <!--Grid column 2 end-->
+
+                            <!--Grid column 3-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="phone" name="phone" class="form-control">
+                                    <label for="phone" class="">Phone number:</label>
+                                </div>
+                            </div>
+                            <!--Grid column 3 end-->
+
+                            <!--Grid column 4-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Email address</label>
+                                </div>
+                            </div>
+                            <!--Grid column 4 end-->
+
+                            <!--Grid column 5-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="town" name="town" class="form-control">
+                                    <label for="town" class="">Town</label>
+                                </div>
+                            </div>
+                            <!--Grid column 5 end-->
+
+                            <!--Grid column 6-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="street" name="street" class="form-control">
+                                    <label for="street" class="">Street</label>
+                                </div>
+                            </div>
+                            <!--Grid column 6 end-->
+
+                        </div>
+                        <!--Grid row 1 end-->
+
+                        <!-- select pizza size, crust, and toppings -->
+                        <div class="my-pizza text-light">
+                            <label for="pizza-sizes">Select your size:</label>
+                            <select name="pizza-sizes" id="pizza-sizes">
+                                <option value="small" id="small-pizza">Small</option>
+                                <option value="medium" id="medium-pizza">Medium</option>
+                                <option value="large" id="large-pizza">Large</option>
+                            </select>
+                          </div>
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+
+                </div>
+                <!--Grid column end-->
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
