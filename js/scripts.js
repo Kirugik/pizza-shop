@@ -4,12 +4,12 @@
 
 //UI logic 
 $(document).ready(function () {
-    $(".form-check-input").change (function() {
+    $("#crust").change (function() {
         if (this.checked) {
-            $(".pizza-toppings").toggle();
+            $("#my-pizza-toppings").toggle();
             $("#crust").prop('checked', false);
         } else {
-            $(".pizza-toppings").hide();
+            $("#my-pizza-toppings").hide();
         }
     });
 });
