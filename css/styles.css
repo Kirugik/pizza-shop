@@ -47,3 +47,8 @@ body {
   height: 100%;
   width: 100%;
 }
+
+/* Crusts and toppings */
+.pizza-toppings {
+  font-size: 15px;
+}
