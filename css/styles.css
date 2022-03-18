@@ -51,4 +51,5 @@ body {
 /* Crusts and toppings */
 .pizza-toppings {
   font-size: 15px;
+  display: none;
 }
