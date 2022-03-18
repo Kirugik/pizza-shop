@@ -34,7 +34,7 @@ body {
   font-size: 80px;
 }
 
-.btn {
+#order-btn {
   font-size: 40px;
   color: red;
   border: 1px solid white;
