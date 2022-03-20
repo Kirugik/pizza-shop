@@ -30,6 +30,7 @@ $(document).ready(function () {
 
 
 
+    //collecting order details from the user
     $("#cartBtn").click (function (event) {
         event.preventDefault();
 
@@ -42,15 +43,16 @@ $(document).ready(function () {
 
     let newOrder = new Pizza (size, crust, toppings, quantity, price);
 
+
+    //populating the cart
     let table = $("table tbody")
-    
-    let tableData=`
-      <tr>
+    let tableData = 
+    `<tr>
         <td>${newOrder.size}</td>
         <td>${newOrder.crust}</td>
         <td>${newOrder.toppings}</td>
         <td>${newOrder.quantity}</td>
         <td>${newOrder.price}</td> 
     </tr>`
-    table[0].innerHTML+=tableData;
+    table[0].innerHTML += tableData;
 });
