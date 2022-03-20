@@ -1,7 +1,7 @@
 const small = {
     id: 0,
     name: "Small Pizza",
-    price: 499,
+    price: 549,
     crusts: ["Neapolitan crust","New York crust", "Chicago crust", "Pan Pizza crust", "Sicilian crust", "St. Louis crust"],
     toppings: ["Roasted tomatoes", "Pickled red onions"]
 },
@@ -9,7 +9,7 @@ const small = {
 const medium = {
     id: 1,
     name: "Medium Pizza",
-    price: 799,
+    price: 749,
     crusts: ["Neapolitan crust","New York crust", "Chicago crust", "Pan Pizza crust", "Sicilian crust", "St. Louis crust"],
     toppings:["Roasted tomatoes", "Pickled red onions"]
 },
@@ -19,4 +19,4 @@ const large = {
     price: 1199,
     crusts: ["Neapolitan crust","New York crust", "Chicago crust", "Pan Pizza crust", "Sicilian crust", "St. Louis crust"],
     toppings: ["Roasted tomatoes", "Pickled red onions"]
-};
+}
