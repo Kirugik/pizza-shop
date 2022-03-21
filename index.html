@@ -19,13 +19,13 @@
             <div class="nav-content" id="navmenu">
                 <ul class="nav-list d-flex flex-row ms-auto mt-1 mb-1">
                     <li class="nav-list-item px-3">
-                        <a href="#Home" class="nav-link">Home</a>
+                        <a href="#main" class="nav-link">Home</a>
                     </li>
                     <li class="nav-list-item px-3">
-                        <a href="#Menu" class="nav-link">Menu</a>
+                        <a href="#menu-page" class="nav-link">Menu</a>
                     </li> 
                     <li class="nav-list-item px-3">
-                        <a href="#Order" class="nav-link">Order online</a>
+                        <a href="#online-delivery" class="nav-link">Order online</a>
                     </li>
                     <li class="nav-list-item px-3">
                         <a href="#Reservation" class="nav-link">Reservations</a>
@@ -48,16 +48,16 @@
                 <h1>Red-Pepper Pizza</h1>
             </div>
             <div>
-                <button type="button" class="btn fw-bold" id="order-btn">Order NOW!</button>
+                <button onclick="window.location.href = '#menu-page'" type="button" class="btn fw-bold" id="order-btn">Order NOW!</button>
             </div>
         </div>
     </section>
 
     <!-- Menu page -->
-    <section class="bg-light text-light" id="menu-page">
+    <section class="bg-light text-light pt-5" id="menu-page">
         <div class="container d-flex flex-row">
             <div class="row text-center d-flex flex-row">
-                <h3 class="text-success pt-2">Our Menu</h3>
+                <h3 class="text-success pt-4">Our Menu</h3>
                 <!-- small pizza -->
                 <div class="col-md">
                     <div class="card text-danger">
@@ -69,7 +69,7 @@
                                 Small
                             </h3>
                             <p class="card-text text-dark">The small pizzas average between 8 and 10 inches in diameter and will yield about six slices.</p>
-                            <h5 class="size-price text-success" id="pizza-price">Ksh.549</h5>
+                            <h5 class="size-price text-success" id="pizza-price">Ksh.550</h5>
                             <form class="mt-3" id="qty-form">
                                 <label for="quantity">Quantity:</label>
                                 <input type="number" id="quantity" name="quantity" min="1" max="100">
@@ -108,7 +108,7 @@
                                 Medium
                             </h3>
                             <p class="card-text text-dark">The medium pizzas run 12 inches in diameter and will give you about eight slices.</p>
-                            <h5 class="size-price text-success" id="pizza-price">Ksh.749</h5>
+                            <h5 class="size-price text-success" id="pizza-price">Ksh.750</h5>
                             <form class="mt-3" id="qty-form">
                                 <label for="quantity">Quantity:</label>
                                 <input type="number" id="quantity" name="quantity" min="1" max="100">
@@ -147,7 +147,7 @@
                                 Large
                             </h3>
                             <p class="card-text text-dark">The large pizzas are 14 inches in diameter and will offer approximately 10 slices.</p>
-                            <h5 class="size-price text-success" id="pizza-price">Ksh.1199</h5>
+                            <h5 class="size-price text-success" id="pizza-price">Ksh.1200</h5>
                             <form class="mt-3" id="qty-form">
                                 <label for="quantity">Quantity:</label>
                                 <input type="number" id="quantity" name="quantity" min="1" max="100">

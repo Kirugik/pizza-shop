@@ -9,14 +9,6 @@ function Pizza(size, crust, toppings, quantity, price) {
     this.price = price;
 }
 
-Pizza.prototype.newOrder = function() {
-    let size = this.size;
-    let crust = this.crust;
-    let toppings = this.toppings;
-    let quantity = parseInt(this.quantity);
-    let price = parseInt(this.price.slice(4)); 
-}
-
 //calculate total cost of ordered pizzas
 Pizza.prototype.calculateTotalCost = function(){
     let unitPrice = parseInt(this.price.slice(4));
@@ -50,7 +42,7 @@ $(document).ready(function () {
 
     let newPizza = new Pizza (size, crust, toppings, quantity, price);
 
-    $(".table tbody").append('<tr><td class="ordername">'+newPizza.name +'</td><td class="ordersize">' + newPizza.size + '</td><td class="ordercrust">'+newPizza.crust + '</td><td class="ordertoppings">'+newPizza.toppings+'</td>');
+    $(".table tbody").append('<tr><td class="ordersize">'+newPizza.size +'</td><td class="ordercrust">' + newPizza.crust + '</td><td class="ordertoppings">'+newPizza.toppings + '</td><td class="orderquantity">'+newPizza.quantity+'</td><td class="orderprice">'+newPizza.price+'</td></tr>');
 
 
     //populating the cart
