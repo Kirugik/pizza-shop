@@ -9,6 +9,8 @@ function Pizza(size, crust, toppings, quantity, price) {
     this.price = price;
 }
 
+const shoppingCart = [];
+
 //calculate total cost of ordered pizzas
 Pizza.prototype.calculateTotalCost = function(){
     let unitPrice = parseInt(this.price.slice(4));
@@ -19,16 +21,10 @@ Pizza.prototype.calculateTotalCost = function(){
 
 //UI logic 
 $(document).ready(function () {
-    // $("#crust").change (function() {
-    //     if (this.checked) {
-    //         $("#my-pizza-toppings").toggle();
-    //         $("#crust").prop('checked', false);
-    //     } else {
-    //         $("#my-pizza-toppings").hide();
-    //     }
-    // });
-
-
+    //display cart on clicking 'add to cart' button 
+    $(".btn-success").click (function () {
+        $("#shoppingCart").show();
+    });
     //collecting order details from the user
     $("#cartBtn").click (function (event) {
         event.preventDefault();
@@ -41,21 +37,9 @@ $(document).ready(function () {
     })
 
     let newPizza = new Pizza (size, crust, toppings, quantity, price);
-
-    $(".table tbody").append('<tr><td class="ordersize">'+newPizza.size +'</td><td class="ordercrust">' + newPizza.crust + '</td><td class="ordertoppings">'+newPizza.toppings + '</td><td class="orderquantity">'+newPizza.quantity+'</td><td class="orderprice">'+newPizza.price+'</td></tr>');
-
+    shoppingCart.push(newPizza);
 
     //populating the cart
-    let table = $(".table tbody")
-    let tableData = 
-    `<tr>
-        <td>${newPizza.size}</td>
-        <td>${newPizza.crust}</td>
-        <td>${newPizza.toppings}</td>
-        <td>${newPizza.quantity}</td>
-        <td>${newPizza.price}</td> 
-    </tr>`
-
-    table[0].innerHTML += tableData;
+    $(".table tbody").append('<tr><td class="ordersize">'+newPizza.size +'</td><td class="ordercrust">' + newPizza.crust + '</td><td class="ordertoppings">'+newPizza.toppings + '</td><td class="orderquantity">'+newPizza.quantity+'</td><td class="orderprice">'+newPizza.price+'</td></tr>'); 
 });
 

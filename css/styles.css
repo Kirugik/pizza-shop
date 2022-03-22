@@ -82,6 +82,10 @@ body {
   color: red;
 }
 
+#shoppingCart {
+  display: none;
+}
+
 /* Crusts and toppings */
 .pizza-toppings {
   font-size: 15px;
