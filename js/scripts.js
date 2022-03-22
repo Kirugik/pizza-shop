@@ -40,6 +40,6 @@ $(document).ready(function () {
     shoppingCart.push(newPizza);
 
     //populating the cart
-    $(".table tbody").append('<tr><td class="ordersize">'+newPizza.size +'</td><td class="ordercrust">' + newPizza.crust + '</td><td class="ordertoppings">'+newPizza.toppings + '</td><td class="orderquantity">'+newPizza.quantity+'</td><td class="orderprice">'+newPizza.price+'</td></tr>'); 
+    $(".table tbody").append('<tr><td class="ordersize">'+newPizza.size +'</td><td class="ordercrust">' + newPizza.crust + '</td><td class="ordertoppings">'+newPizza.toppings + '</td><td class="orderquantity">'+newPizza.quantity+'</td><td class="orderprice">'+newPizza.price+'</td></tr>') 
 });
 
